@@ -1,0 +1,9 @@
+# project
+logs/
+
+# python
+__pycache__/
+.pytest_cache/
+latest_logs/
+venv/
+v/
