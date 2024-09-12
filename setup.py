@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="log",
+    name="easylog",
     version="0.1.0",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
@@ -16,7 +16,7 @@ setup(
     ),
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/avivilloz/log",
+    url="https://github.com/avivilloz/easylog",
     python_requires=">=3.6",
     classifiers=[
         "Programming Language :: Python :: 3",

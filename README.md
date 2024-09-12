@@ -1,4 +1,4 @@
-# LOG
+# Easy LOG
 
 A simple and flexible logging utility for Python projects, providing easy setup and customizable logging configurations.
 
@@ -25,34 +25,34 @@ Whether you're debugging, monitoring application behavior, or maintaining audit 
 
 Run the following command in your python venv:
 
-```
-pip install git+https://github.com/avivilloz/log.git@main#egg=log
+```sh
+pip install git+https://github.com/avivilloz/easylog.git@main#egg=easylog
 ```
 
 Or add the following line to your project's `requirement.txt` file:
 
 ```
-git+https://github.com/avivilloz/log.git@main#egg=log
+git+https://github.com/avivilloz/easylog.git@main#egg=easylog
 ```
 
 And run the following command:
 
-```
+```sh
 pip install -r requirements.txt
 ```
 
 ## How to use:
 
 `setup.py`
-```
-from log import setup_logging
+```python
+from easylog import setup_logging
 
 setup_logging()
 ```
 
 `other.py`
-```
-from log import get_logger
+```python
+from easylog import get_logger
 
 LOG = get_logger(__name__)
 LOG.info("Logging")
