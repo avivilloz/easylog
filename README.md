@@ -1,4 +1,4 @@
-# Logging Wrapper
+# Logging Utils
 
 A simple and flexible logging utility for Python projects, providing easy setup and customizable logging configurations.
 
@@ -26,13 +26,13 @@ Whether you're debugging, monitoring application behavior, or maintaining audit 
 Run the following command in your python venv:
 
 ```sh
-pip install git+https://github.com/avivilloz/logging_wrapper.git@main#egg=logging_wrapper
+pip install git+https://github.com/avivilloz/logging_utils.git@main#egg=logging_utils
 ```
 
 Or add the following line to your project's `requirement.txt` file:
 
 ```
-git+https://github.com/avivilloz/logging_wrapper.git@main#egg=logging_wrapper
+git+https://github.com/avivilloz/logging_utils.git@main#egg=logging_utils
 ```
 
 And run the following command:
@@ -45,14 +45,14 @@ pip install -r requirements.txt
 
 `setup.py`
 ```python
-from logging_wrapper import setup_logging
+from logging_utils import setup_logging
 
 setup_logging()
 ```
 
 `other.py`
 ```python
-from logging_wrapper import get_logger
+from logging_utils import get_logger
 
 LOG = get_logger(__name__)
 LOG.info("Logging")
